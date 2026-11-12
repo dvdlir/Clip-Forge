@@ -1,0 +1,20 @@
+BUILDING THE WINDOWS APP (.EXE)
+
+This project includes a GitHub Actions workflow that builds ClipForgeAI.exe on a Windows runner.
+
+1. Create a GitHub repository and upload the contents of this project ZIP.
+2. Open the repository's Actions tab.
+3. Select "Build ClipForge AI Windows EXE".
+4. Click "Run workflow" and wait for the build to finish.
+5. Open the completed workflow run and download the "ClipForgeAI-Windows" artifact.
+6. Extract the artifact ZIP. It contains ClipForgeAI.exe. Double-click it to launch.
+
+The executable bundles the Python app and FFmpeg. The first launch downloads the local
+speech-recognition model, so it needs internet and can take a little while. AI processing
+then runs on the PC. A reasonably capable Windows PC is recommended.
+
+If Windows SmartScreen warns about an unknown publisher, only run the EXE if you built it
+from your own repository and trust the source code.
+
+This is a prototype. The current highlight ranking is heuristic, and YouTube access can
+vary. Only use videos you own or have permission to reuse, and follow YouTube's Terms.
